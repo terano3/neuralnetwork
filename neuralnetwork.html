@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"><!-- 文字化け防止の記述 -->
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- ややこしいので無視してOK -->
+	  <title>ﾆｭｰﾗﾙﾈｯﾄﾜｰｸによる学習</title><!-- ページのタイトルを入れます -->
+  </head>
+  <div class="container">
+  <body>
+     <img src="data:image/jpeg;base64,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" alt="">
+     <p class="tytle">ﾆｭｰﾗﾙﾈｯﾄﾜｰｸによる学習</p>
+     <canvas id="canvas" width="300" height="300"></canvas>
+     <input type="button" id="add_data" value="学習ﾃﾞｰﾀに追加">
+     <input type="button" id="clear" value="クリアー">
+     <p>文字；</p>
+     <input type="text" id="moji" value="0">
+     <input type="button" id="start_learning" value="学習開始">
+     <h1 id="sorts">学習データ</h1>
+     <table border="1">
+      <tr>
+       <td><input type="button" id="judge_btn" value="判定"></td>
+       <td id="judge"></td>
+      </tr>
+     </table>
+     <canvas id="canvas2" width="55" height="55"></canvas>
+
+     <script>
+     var flgDraw = false;
+     var gX = 0;
+     var gY = 0;
+     var canvas = document.getElementById('canvas');
+     var con = canvas.getContext('2d');
+     var canvas2 = document.getElementById('canvas2');
+     var con2 = canvas2.getContext('2d');
+
+     var side = 100, hlayers = side, pixels = side ** 2;
+
+     window.onload = function() {
+         canvas.addEventListener('mousedown', startDraw, false);
+         canvas.addEventListener('mousemove', Draw, false);
+         canvas.addEventListener('mouseup', endDraw, false);
+     }
+
+     function startDraw(e){
+         flgDraw = true;
+         gX = e.offsetX;
+         gY = e.offsetY;
+     }
+
+     function Draw(e){
+         if (flgDraw == true){
+             var x = e.offsetX;
+             var y = e.offsetY;
+
+             con.lineWidth = 10;
+             con.strokeStyle = "black";
+
+             con.beginPath();
+             con.moveTo(gX, gY);
+             con.lineTo(x, y);
+             con.closePath();
+             con.stroke();
+
+             gX = x;
+             gY = y;
+         }
+     }
+
+     function endDraw(){
+         flgDraw = false;
+     }
+
+
+   var cvs_datum = [];
+   var data = [];
+   var data_sorts = [];
+   const sorts = document.getElementById('sorts');
+
+   function check_onefgure_ornot(){
+     var mojicount = document.getElementById("moji").value.length
+     if(mojicount!=1){
+       alert("１文字のみ入力してください。")
+       return;
+     }
+   }
+
+   function get_mojidata(){
+     check_onefgure_ornot()
+     var moji = document.getElementById("moji").value
+     var cvs_datum = new Array(pixels)
+     var its_null = 1
+     for(var i=0;i<side;i++){
+       for(var j=0;j<side;j++){
+         if(con.getImageData(j*300/side,i*300/side, 1, 1).data[3]==255){
+           cvs_datum[i*side + j] = 1
+           its_null = 0
+         }
+         else{cvs_datum[i*side + j] = 0}
+       }}
+     if(its_null==1){
+       console.log("空白です！")
+       return
+     }
+     for(var i=0;i<data_sorts.length;i++){
+       if(data_sorts[i]==moji){
+         data[i].push(cvs_datum)
+         var multipleprime = document.getElementById(moji + "prime")
+         multipleprime.setAttribute("value","×" + data[i].length);
+         break;
+       }
+       if(i==data_sorts.length-1){
+         data_sorts.push(moji)
+         data.push([])
+         data[i+1].push(cvs_datum)
+         sorts.insertAdjacentHTML('afterend','<input type="text" disabled id="mojiprime" value="mojiprime"><input type="text" disabled id="mojidoubleprime" name="multiple" value="">')
+         var mojiprime = document.getElementById("mojiprime");
+         mojiprime.setAttribute("id",moji);
+         mojiprime.setAttribute("value",moji);
+         var mojidoubleprime = document.getElementById("mojidoubleprime");
+         mojidoubleprime.setAttribute("id",moji + "prime");
+         break;
+       }}
+      if(data_sorts.length==0){
+        data_sorts.push(moji)
+        data.push([])
+        data[0].push(cvs_datum)
+        sorts.insertAdjacentHTML('afterend','<input type="text" disabled id="mojiprime" value="mojiprime"><input type="text" disabled id="mojidoubleprime" name="multiple" value="">')
+        var mojiprime = document.getElementById("mojiprime");
+        mojiprime.setAttribute("id",moji);
+        mojiprime.setAttribute("value",moji);
+        var mojidoubleprime = document.getElementById("mojidoubleprime");
+        mojidoubleprime.setAttribute("id",moji + "prime");
+      }
+      }
+
+
+     var add_data = document.getElementById("add_data");
+     add_data.addEventListener('click',function(){
+       get_mojidata()
+       con.clearRect(0, 0, 300, 300)
+     });
+
+     var clear = document.getElementById("clear");
+     clear.addEventListener('click',function(){
+       con.clearRect(0, 0, 300, 300)
+     });
+
+     var first_ornot = 0
+     var start_learning = document.getElementById("start_learning")
+     start_learning.addEventListener('click',function(){
+      if(first_ornot == 0){
+       a()
+       first_ornot = 1
+      }
+      else{
+        if(window.confirm("再度学習を開始します。よろしいですね？")){
+          a()
+        }
+      }
+    }
+   )
+
+     var judge_btn = document.getElementById("judge_btn")
+     judge_btn.addEventListener('click',function(){
+       b()
+     })
+
+    var datanum=0,sortnum=0,maxepi=100; //とりあえず
+    var i, j, k, m, x=[]
+    var alpha=0.2, eps=0.1, n=0 //最急降下法のステップサイズ,平方和の合計の収束条件,反復回数カウント
+    var wh=[], wo=[], thetah=[], thetao=[]
+    var sh=[], h=[], so=[], z=[], e=[], etotal
+    var deltah=[], deltao=[]
+    var nablawh=[], nablathetah=[], nablawo=[], nablathetao=[]
+    var nablawhE=[], nablathetahE=[], nablawoE=[], nablathetaoE=[]
+    var deltaowo;
+
+
+
+  function a(){
+       //x(i,m)はdata[][]
+       //t1,t2,...,tnはdata_sortsのindex参照
+       wh = new Array(pixels) //wh,wo,thetah,thetaoを乱数に
+       thetah = new Array(hlayers)
+       for(var m=0;m<pixels;m++){
+         wh[m] = new Array(hlayers)
+         for(var j=0;j<hlayers;j++){
+           wh[m][j] = Math.random()*2-1
+         }
+       }
+       for(var j=0;j<hlayers;j++){
+         thetah[j] = Math.random()*2-1
+       }
+
+       sortnum = data.length
+       for(var i=0;i<sortnum;i++){
+         datanum += data[i].length
+       }
+       wo = new Array(side)
+       for(var j=0;j<side;j++){
+         wo[j] = new Array(sortnum)
+         for(var k=0;k<sortnum;k++){
+           wo[j][k] = Math.random()*2 -1
+         }
+       }
+       thetao = new Array(sortnum)
+       for(var k=0;k<sortnum;k++){
+         thetao[k] = Math.random()*2 -1
+       }
+
+       var randomdatasub = []  //shuffle関数でxを定義
+       var randomdata = []
+       for(var i=0;i<sortnum;i++){
+         for(var j=0;j<data[i].length;j++){
+           randomdatasub.push(i)
+         }
+       }
+
+       const shuffle = ([...randomdatasub]) => { //「Fisher–Yates shuffle」
+        for (let i = randomdatasub.length - 1; i >= 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+        [randomdatasub[i], randomdatasub[j]] = [randomdatasub[j], randomdatasub[i]];
+        }
+         return randomdatasub;
+       }
+
+       t = shuffle(randomdatasub)
+
+       var datasub = data
+       for(var i=0;i<datanum;i++){
+         randomdata.push(datasub[t[i]][0])
+         datasub[t[i]].shift
+       }
+
+       var canvas2 = document.getElementById('canvas2');
+       var con2 = canvas2.getContext('2d');
+
+       console.log("0%")
+       x = randomdata
+       while(n<maxepi){
+        n += 1 //ループ開始
+        etotal = 0 //平方誤差の総和E
+
+        con2.beginPath();
+        //con2.arc(26,26,22.5,-Math.PI/2,Math.PI*(-1+4*n/maxepi)/2,false);
+        con2.strokeStyle="gray";
+        con2.lineWidth=7;
+        con2.stroke();
+
+        sh = new Array(datanum)
+        so = new Array(datanum)
+        z = new Array(datanum)
+        e = new Array(datanum)
+        h = new Array(datanum)
+        for(var i=0;i<datanum;i++){
+          sh[i] = new Array(hlayers)
+          so[i] = new Array(sortnum)
+          z[i] = new Array(sortnum)
+          e[i] = 0
+          h[i] = new Array(hlayers)
+          for(var j=0;j<hlayers;j++){　 //sh,soからh,zを導出
+            sh[i][j] = 0
+            for(var m=0;m<pixels;m++){
+              sh[i][j] += (wh[m][j] * x[i][m])
+            }
+            sh[i][j] -= thetah[j]
+            h[i][j] = 1 / (1 + Math.exp(-sh[i][j]))
+          }
+          for(var k=0;k<sortnum;k++){
+            so[i][k] = 0
+            for(var j=0;j<side;j++){
+              so[i][k] += wo[j][k] * h[i][j]
+            }
+            so[i][k] -= thetao[k]
+            z[i][k] = 1 / (1 + Math.exp(-so[i][k]))
+          }
+          for(var k=0;k<sortnum;k++){　　//平均誤差eからetotalを導出、判別
+            e[i] += ((((t[i] + k)%sortnum)-z[i][k]) ** 2)
+          }
+          etotal += e[i] / sortnum
+        }
+        if(etotal<eps){
+          return;
+        }
+
+      }
+
+        nablawhE = new Array(pixels)  //nablaを初期化
+        nablathetahE = new Array(hlayers)
+        for(var m=0;m<pixels;m++){
+          nablawhE[m] = new Array(hlayers)
+        }
+        nablathetahE = new Array(hlayers)
+        for(var j=0;j<hlayers;j++){
+          nablathetahE[j] = 0
+        }
+        nablawoE = new Array(side)
+        for(var m=0;m<side;m++){
+          nablawoE[m] = new Array(sortnum)
+        }
+        nablathetaoE = new Array(sortnum)
+        for(var j=0;j<sortnum;j++){
+          nablathetaoE[j] = 0
+        }
+
+        deltao = new Array(datanum)
+        deltah = new Array(datanum)
+        for(var i=0;i<datanum;i++){
+          deltao[i] = new Array(sortnum)  //deltaを導出
+          for(var j=0;j<sortnum;j++){
+            deltao[i][j] = -(((t[i] + j)%sortnum)-z[i][j])*z[i][j]*(1-z[i][j])
+          }
+          deltah[i] = new Array(hlayers)
+          for(var j=0;j<hlayers;j++){
+            deltaowo = 0;
+            for(var k=0;k<sortnum;k++){
+              deltaowo += deltao[i][k] * wo[j][k]
+            }
+            deltah[i][j] = deltaowo * h[i][j] * (1-h[i][j])
+          }
+
+          for(var m=0;m<pixels;m++){  //nablaを導出
+            for(var j=0;j<hlayers;j++){
+              nablawhE[m][j] = 0
+            }
+            for(var j=0;j<hlayers;j++){
+              nablawhE[m][j] += deltah[i][j] * x[i][m]
+              nablathetahE[j] -= deltah[i][j]
+            }
+          }
+          for(var j=0;j<side;j++){
+            for(var k=0;k<sortnum;k++){
+              nablawoE[j][k] = 0
+            }
+            for(var k=0;k<sortnum;k++){
+              nablawoE[j][k] += deltao[i][k] * h[i][j]
+              nablathetaoE[k] -= deltao[i][k]
+            }
+          }
+        }
+        for(var j=0;j<hlayers;j++){　　//wh,woを修正
+          for(var m=0;m<pixels;m++){
+            wh[m][j] -= alpha * nablawhE[m][j]
+          }
+          thetah[j] -= alpha * nablathetahE[j]
+        }
+        for(var k=0;k<sortnum;k++){
+          for(var j=0;j<side;j++){
+            wo[j][k] -= alpha * nablawoE[j][k]
+          }
+          thetao[k] -= alpha * nablathetaoE[k]
+        }
+        var learnstate = n + "/" + maxepi + " 完了"
+        start_learning.setAttribute("value",learnstate)
+        if((n * 100 / maxepi)%10==0){
+          console.log((n * 100 / maxepi) + "%")
+       }
+       alert("学習が完了しました。")
+       start_learning.setAttribute("value","再学習")
+     }
+
+   var judge = document.getElementById("judge")
+
+
+
+   function b(){
+     var its_null = 1
+     cvs_datum = new Array(pixels)
+     for(var i=0;i<side;i++){
+       for(var j=0;j<side;j++){
+         cvs_datum[i*side + j] = 0
+         if(con.getImageData(j*300/side,i*300/side, 1, 1).data[3]==255){
+           cvs_datum[i*side + j] = 1
+           its_null = 0
+         }}}
+      if(its_null==1){
+        judge.textContent="空白です！"
+        return
+      }
+      x = cvs_datum
+      sh = new Array(hlayers)
+      h = new Array(hlayers)
+      for(var j=0;j<hlayers;j++){
+       sh[j] = 0
+       h[j] = 0
+        for(var m=0;m<pixels;m++){
+          sh[j] += (wh[m][j] * x[m])
+        }
+        sh[j] -= thetah[j]
+        h[j] = 1 / (1 + Math.exp(-sh[j]))
+      }
+
+        so = new Array(sortnum)
+        z = new Array(sortnum)
+        var zprime = new Array(sortnum)
+        var percent = 0
+        for(var k=0;k<sortnum;k++){
+          so[k] = 0
+          for(var j=0;j<side;j++){
+            so[k] += wo[j][k] * h[j]
+          }
+          so[k] -= thetao[k]
+          z[k] = 1 / (1 + Math.exp(-so[k]))
+          zprime[k] = Math.abs(z[k] - k)
+        }
+        var i=0
+        for(var j=1;j<sortnum;j++){
+          if(zprime[i]>zprime[j]){
+            i = j
+          }
+        }
+        console.log("zprime\n"+zprime)
+        percent = Math.round((1-zprime[i])*100)
+        var hantei_ha = data_sorts[i] +" "+ percent + "%"
+        console.log("判定は" + data_sorts[i] +" "+ percent + "%")
+        judge.textContent=hantei_ha
+      }
+
+    </script>
+  </body>
+</div>
+<style media="screen">
+ body {
+   width:1000px;
+   margin: auto;
+}
+.container{
+    position:relative;
+    background-color: lightyellow;
+    width:1000px;
+    min-height: 100vh;
+    margin: auto;
+  }
+img{
+  margin: auto;
+  width:1000px;
+  height:150px;
+}
+p.tytle{
+    position: absolute;
+    margin:0;
+    top:75px;
+    left:40%;
+    transform: translate(-11%,-50%);
+    width:150%;
+    font-size:45px;
+    color: orange;
+}
+canvas{
+  position:relative;
+  top:15px;
+  left:20px;
+  background-color:rgba(255,255,255,1);
+  border: 2px solid;
+}
+input[id="add_data"]{
+  position:relative;
+  resize:both;
+  top:40px;
+  left:126px;
+  height:45px;
+  font-size:17px;
+  display: block;
+  z-index:10000;
+}
+input[id="clear"]{
+  position:relative;
+  top:-5px;
+  left:265px;
+  height:45px;
+  font-size:17px;
+  display: block;
+  z-index:10000;
+}
+p{
+  position:relative;
+  top:-54px;
+  left:20px;
+}
+input[id="moji"]{
+  position:relative;
+  top:-104px;
+  left:67px;
+  width:30px;
+  padding:10px;
+  text-align:center;
+  font-size:15px;
+}
+h1{
+  position:relative;
+  top:-500px;
+  left:467px;
+}
+input[disabled]{
+  position:relative;
+  resize: none;
+  top:-485px;
+  left:397px;
+  width:100px;
+  height:100px;
+  font-size:90px;
+  margin:5px;
+  text-align:center;
+}
+input[name="multiple"]{
+  position:relative;
+  resize: vertical;
+  top:-470px;
+  left:335px;
+  width:45px;
+  height:20px;
+  font-size:20px;
+  z-index:10000;  //学習データの折り返しが必要
+}
+input[id="start_learning"]{
+  position:relative;
+  resize:both;
+  top:-5px;
+  left:190px;
+  font-size:20px;
+}
+table{
+  position:relative;
+  resize:both;
+  top:-70px;
+  left:20px;
+  width:150px;
+  height:60px;
+  font-size:40px;
+  z-index:10000;
+}
+td[id="judge"]{
+    resize:both;
+  width:300px;
+}
+input[id="judge_btn"]{
+  width:150px;
+  height:60px;
+  font-size:40px;
+  text-align:center;
+}
+canvas[id="canvas2"]{
+  position:relative;
+  background-color: lightyellow;
+  border: 2px none;
+  top:-340px;
+  left:355px;
+  z-index:10000;
+}
+</style>
+</html>
